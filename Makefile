@@ -111,3 +111,7 @@ mypy:
 
 dev-version-plugin:
 	poetry self add git+https://github.com/monim67/poetry-bumpversion@315fe3324a699fa12ec20e202eb7375d4327d1c4
+
+
+example_run:
+	poetry run python examples/$(FPATH)
