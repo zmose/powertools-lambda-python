@@ -598,6 +598,12 @@ class Logger:
     def remove_keys(self, keys: Iterable[str]):
         self.registered_formatter.remove_keys(keys)
 
+    def append_contextvar_keys(self, **additional_contextvar_keys):
+        return
+
+    def remove_contextvar_keys(self, keys: Iterable[str]):
+        return
+
     def structure_logs(self, append: bool = False, formatter_options: Optional[Dict] = None, **keys):
         """Sets logging formatting to JSON.
 
